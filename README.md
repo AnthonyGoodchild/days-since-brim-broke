@@ -26,3 +26,12 @@ The momentary switch is directly wired between ground and GPIO 1 (HW pin 28) whi
 
 hwclock was set up using dtoverlay for `ds1307`, written back to software clock in `rc.local` with `hwclock -s`.
 
+### Installation
+
+```pip3 install -r requirements.txt```
+
+run at boot from `/etc/rc.local` with 
+
+```python3 /home/pi/days-since-brim-broke/brim.py &```
+
+(before call to exit)
